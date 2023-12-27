@@ -1,0 +1,563 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Teko';
+    src: url(font/Teko-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(font/Montserrat-VariableFont_wght.ttf);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Teko';
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+header{
+    color: white;
+    width: auto;
+    height: auto;
+    animation-name: 'upper';
+    animation-duration: 3s;
+    scroll-snap-align: start;
+    gap: 2rem;
+}
+
+.upper{
+    background-color: #008170;
+}
+
+.slide{
+    height: 100vh;
+    background-image: url(image/_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.webname{
+    margin: 20px 12px 20px 25px;
+    display: flex;
+
+}
+
+.JL a{
+    color: white;
+    text-decoration: none;
+}
+
+.web{
+    color: #E3B448;
+}
+
+.upper{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.webname h1{
+    font-weight: bold;
+    font-size: 4rem;
+    animation-name: webnameAnim;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes webnameAnim {
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.tabs{
+    margin: 20px 25px 20px 15px;
+    font-size: 30px;
+    animation-name: tabsAnim;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tabsAnim {
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+.list{
+    display: flex;
+    gap: 5rem;
+    margin-top: 25px;
+}
+
+.tabs li{
+    list-style: none;
+
+}
+
+.tabs a{
+    color:white;
+    text-decoration: none;
+    
+}
+
+.tabs a:hover{
+    filter: brightness(75%);
+    transition: 0.3s;
+}
+
+.nameImg{
+    display: flex;
+    margin: 0 0 0 2rem;
+}
+
+.names{
+    margin: 11rem 0 0 0rem;
+    animation-name: namesAnim;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    line-height: 8rem;
+}
+
+
+.name1{
+    display: flex;
+    font-size: 5rem;
+    margin-top: 95px;
+    animation-name: name1Anim;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+}
+
+@keyframes name1Anim{
+    0%{
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.name2{
+    display: flex;
+    font-size: 9rem;
+    color: #E3B448;
+    width: 75rem;
+    animation-name: name2Anim;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+}
+
+@keyframes name2Anim {
+    0%{
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.name3{
+    font-size: 3rem;
+    display: flex;
+    animation-name: name3Anim;
+    animation-delay: 2s;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+}
+
+@keyframes name3Anim {
+    0%{
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+.image img{
+    height: 35rem;
+    margin: 6.5rem 0 0 4.5rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    animation-name: imageAnim;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+}
+
+@keyframes imageAnim{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.logo{
+    margin-left: 2.05rem;
+    display: flex;
+    flex-direction: row;
+    animation: logoAnim;
+    animation-delay: 3s;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+}
+
+@keyframes logoAnim {
+    0%{
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.fb{
+    display: flex;
+    
+}
+
+
+.fb img{
+    height: 4rem;
+    border: white solid 3px;
+    border-radius: 25%;
+}
+
+.x img{
+    height: 4rem;
+    border-radius: 25%;
+    border: white solid 3px;
+    margin: 0 5rem;
+}
+
+
+.ig img{
+    height: 4rem;
+    border-radius: 25%;
+    border: white solid 3px;
+}
+
+.slide2{
+    height: 100vh;
+    scroll-snap-align: center;
+
+}
+
+.aboutMeIntro{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #133B5C;
+    justify-content: center;
+    scroll-snap-align: center;
+}
+
+.aboutMeIntro h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 3rem;
+    color: white;
+
+}
+
+.aboutMeIntro p{
+    width: 90rem;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+
+.skillHobbies{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.skillHobbies h1{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.pianoSketch{
+    display: flex;
+    gap: 1rem;
+    height: 40%;
+}
+
+.piano{
+    display: flex;
+}
+
+.definition p{
+    text-align: justify;
+}
+
+.piano h2{
+    margin: 0 0 0 2rem;
+    font-size: 3rem;
+    
+}
+
+.piano p{
+    margin: 0 0 7.5rem 2rem;
+    font-size: 23px;
+    display: flex;
+    width: 40rem;
+    font-family: 'Montserrat';
+}
+
+.piano img{
+    border-radius: 50%;
+    height: 8rem;
+    width: 8rem;
+    border: black solid 3px;
+    display: flex;
+    margin: 1rem 0 0 0;
+}
+
+.sketch{
+    display: flex;
+}
+
+.definition2 p{
+    text-align: justify;
+}
+
+.sketch h2{
+    margin: 0 0 0 2rem;
+    font-size: 3rem;
+}
+
+
+.sketch p{
+    margin: 0 0 7.5rem 2rem;
+    font-size: 23px;
+    display: flex;
+    /*border: black solid 3px;*/
+    width: 40rem;
+    font-family: 'Montserrat';
+}
+
+.sketch img{
+    border-radius: 50%;
+    height: 8rem;
+    width: 8rem;
+    border: black solid 3px;
+    display: flex;
+    margin: 1rem 0 0 0;
+}
+
+.musicSeries{
+    display: flex;
+    gap: 1rem;
+}
+
+.music{
+    display: flex;
+
+}
+
+.definition3 p{
+    text-align: justify;
+}
+
+.music h2{
+    margin: 0 0 0 2rem;
+    font-size: 3rem;
+}
+
+.music p{
+    margin: 0 0 0 2rem;
+    width: 40rem;
+    font-size: 23px;
+    font-family: 'Montserrat';
+}
+
+.music img{
+    border-radius: 50%;
+    height: 8rem;
+    width: 9rem;
+    border: black solid 3px;
+}
+
+.series{
+    display: flex;
+
+}
+
+.definition4 p{
+    text-align: justify;
+}
+
+.series h2{
+    margin: 0 0 0 2rem;
+    font-size: 3rem;
+}
+
+.series p{
+    margin: 0 0 0 2rem;
+    width: 40rem;
+    font-size: 20px;
+    font-family: 'Montserrat';
+}
+
+.series img{
+    border-radius: 50%;
+    height: 8rem;
+    width: 8rem;
+    border: black solid 3px;
+}
+
+.slide3{
+    height: 100vh;
+    background-color: #1D2D50;
+}
+
+.future{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.future h1{
+    color: white;
+    font-size: 4rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+
+}
+
+.vidDef{
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.vidDef video{
+    display: flex;
+    margin: 2rem 0 4rem 2rem;
+    border-radius: 10px;
+    height: 35rem;
+    border: #E3B448 solid 3px;
+    align-items: center;
+    
+}
+
+.vidDef p{
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    width: 67rem;
+    font-size: 32px;
+    margin: 0 2rem 1.5rem 0;
+    font-family: 'Montserrat';
+}
+
+.source{
+    margin: 0 0 0 2rem;
+    text-decoration: underline;
+}
+
+.source p{
+    font-size: 1.5rem;
+    font-family: 'Montserrat';
+
+}
+
+.source a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Montserrat';
+    color: white;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #1E5F74;
+}
+
+.footWebName{
+    display: flex;
+    justify-content: center
+}
+
+.footWebName a{
+    text-decoration: none;
+    font-size: 5rem;
+}
+
+.JLfoot a{
+    color: white;
+}
+
+.Webfoot a{
+    color: #E3B448;
+}
+
+.ITC h1{
+    text-align: center;
+    font-size: 5rem;
+    text-decoration: overline;
+    letter-spacing: 20px;
+}
+
+.ITC h3{
+    text-align: center;
+    font-size: 3rem;
+    color: #E3B448;
+    letter-spacing: 15px;
+    font-family: 'Montserrat';
+}
+
+.creator{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: 'Montserrat';
+    margin-bottom: 2rem;
+    text-decoration: overline;
+}
+

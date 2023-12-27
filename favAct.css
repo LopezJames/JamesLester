@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Teko';
+    src: url(font/Teko-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(font/Montserrat-VariableFont_wght.ttf);
+}
+
+body{
+    font-family: 'Teko';
+}
+
+header{
+    background-image: url(image/_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: auto;
+    width: auto;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #008170;
+
+}
+
+.webname{
+    margin: 20px 12px 20px 25px;
+    display: flex;
+    animation-name: webnameAnim;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes webnameAnim {
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.webname h1{
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.web{
+    color: #E3B448;
+}
+
+.web a{
+    text-decoration: none;
+}
+
+.JL a{
+    color: white;
+    text-decoration: none;
+}
+
+.tabs{
+    margin: 20px 25px 20px 15px;
+    font-size: 30px;
+    animation-name: tabsAnim;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tabsAnim {
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+.list{
+    display: flex;
+    gap: 5rem;
+    margin-top: 25px;
+}
+
+.tabs li{
+    list-style: none;
+
+}
+
+.tabs a{
+    color:white;
+    text-decoration: none;
+    
+}
+
+.tabs a:hover{
+    filter: brightness(75%);
+    transition: 0.3s;
+}
+
+.container1{
+    height: 100vh;
+}
+
+.container1 h1{
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    animation-name: titleAnim;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+}
+
+@keyframes titleAnim{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.images{
+    display: flex;
+    justify-content: space-between;
+    height: 45rem;
+    margin: auto 10rem auto 10rem;
+    animation-name: imgAnim;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+}
+
+@keyframes imgAnim{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.images img{
+    border: white solid 5px;
+    border-radius: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #1E5F74;
+}
+
+.footWebName{
+    display: flex;
+    justify-content: center
+}
+
+.footWebName a{
+    text-decoration: none;
+    font-size: 5rem;
+}
+
+.JLfoot a{
+    color: white;
+}
+
+.Webfoot a{
+    color: #E3B448;
+}
+
+.ITC h1{
+    text-align: center;
+    font-size: 5rem;
+    text-decoration: overline;
+    letter-spacing: 20px;
+}
+
+.ITC h3{
+    text-align: center;
+    font-size: 3rem;
+    color: #E3B448;
+    letter-spacing: 15px;
+    font-family: 'Montserrat';
+}
+
+.creator{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: 'Montserrat';
+    margin-bottom: 2rem;
+    text-decoration: overline;
+}
