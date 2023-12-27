@@ -22,6 +22,9 @@ body{
     font-family: 'Teko';
     overflow-x: hidden;
     overflow-y: scroll;
+    background-image: url(image/_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 header{
@@ -40,9 +43,7 @@ header{
 
 .slide{
     height: 100vh;
-    background-image: url(image/_background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    
 }
 
 .webname{
